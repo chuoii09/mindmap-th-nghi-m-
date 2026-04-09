@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindmap chuyên sâu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="brand">Mindmap Chuyên Sâu</div>
+        <div class="toolbar">
+            <button id="btn-new-node" title="Tạo nút mới">New node</button>
+            <button id="btn-connect" title="Chế độ kết nối">Connect</button>
+            <button id="btn-center" title="Làm mới trung tâm">Reset</button>
+            <button id="btn-save" title="Lưu mindmap">Save</button>
+            <button id="btn-load" title="Load">Load</button>
+        </div>
+    </header>
+    <main>
+        <aside class="sidebar">
+            <section class="panel">
+                <h2>Hướng dẫn</h2>
+                <ul>
+                    <li>Click vào vùng trống để tạo nút mới.</li>
+                    <li>Kéo thả để di chuyển nút.</li>
+                    <li>Double click vào nút để đổi tên.</li>
+                    <li>Chọn nút rồi bấm Connect để nối liên kết.</li>
+                    <li>Nhấn Delete để xóa nút đang chọn.</li>
+                </ul>
+            </section>
+            <section class="panel">
+                <h2>Trạng thái</h2>
+                <div id="info">Chưa chọn nút nào.</div>
+            </section>
+        </aside>
+        <section class="workspace">
+            <svg id="mindmap" tabindex="0"></svg>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
